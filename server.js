@@ -14,7 +14,7 @@ io.on('connection', function(socket){
   socket.on('first', function(data){
     console.log(data.message)
     socket.emit('second', {
-      message : data.message
+      message : data
     })
   })
 })
